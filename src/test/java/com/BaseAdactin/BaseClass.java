@@ -325,6 +325,8 @@ public class BaseClass {
 				value = String.valueOf(l);
 				System.out.println(value);
 			}
+		default:
+			break;
 			
 		}
 		return value;
