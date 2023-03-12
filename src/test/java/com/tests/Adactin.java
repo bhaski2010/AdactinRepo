@@ -1,17 +1,10 @@
 package com.tests;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -46,7 +39,7 @@ public class Adactin extends BaseClass{
 	//To verify whether the check-out date field accepts a later date than check-in date using DataProvider.		
 	@Test (dataProvider = "searchHotelData", dataProviderClass = DataProviderDetails.class)
 	public void TC102(int loc, int hotel, String roomtype, int noofroom, String checkIn, String checkout, int adultcount, int childcount) {
-		AdactinLoginPage2 al2= new AdactinLoginPage2();
+	//	AdactinLoginPage2 al2= new AdactinLoginPage2();
 		Assert.assertEquals(driver.getTitle(), "Adactin.com - Search Hotel");
 		searchHotel sh = new searchHotel();
 		selectHotelPage sho = new selectHotelPage();

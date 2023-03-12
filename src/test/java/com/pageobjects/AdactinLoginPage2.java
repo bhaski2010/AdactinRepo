@@ -54,7 +54,7 @@ public class AdactinLoginPage2 extends BaseClass{
 		clickbtn(forgotpw);
 	}
 	
-	private void regisHere() {
+	public void regisHere() {
 		clickbtn(registerhere);
 	}
 	
