@@ -2,7 +2,6 @@ package com.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import com.BaseAdactin.BaseClass;
 import com.pageobjects.AdactinLoginPage1;

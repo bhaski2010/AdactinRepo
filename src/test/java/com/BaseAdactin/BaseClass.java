@@ -297,6 +297,7 @@ public class BaseClass {
 	public static String readingFromExcel(String excelname, String sheetname, int rownumber, int cellnumber) throws IOException {
 		File f = new File("src\\test\\resources\\Excel\\"+ excelname+".xlsx");
 		FileInputStream fis = new FileInputStream(f);
+		@SuppressWarnings("resource")
 		Workbook wb = new XSSFWorkbook(fis);
 		Sheet s = wb.getSheet(sheetname);
 		Row r = s.getRow(rownumber);
