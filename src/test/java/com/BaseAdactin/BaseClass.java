@@ -325,16 +325,6 @@ public class BaseClass {
 				value = String.valueOf(l);
 				System.out.println(value);
 			}
-		case BLANK:
-			break;
-		case BOOLEAN:
-			break;
-		case ERROR:
-			break;
-		case FORMULA:
-			break;
-		case _NONE:
-			break;
 		default:
 			break;
 			
